@@ -9,7 +9,7 @@ ANetGameMode::ANetGameMode()
 	: Super()
 {
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/Net/Blueprints/NetCharacter"));
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/epi/Net/Blueprints/NetCharacter"));
 	// DefaultPawnClass = PlayerPawnClassFinder.Class;
 
 	if (PlayerPawnClassFinder.Class != NULL) {
